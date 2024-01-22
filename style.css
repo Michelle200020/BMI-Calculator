@@ -12,15 +12,18 @@ body {
 }
 
 .container1 {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     height: 100vh;
-   
-    
+
 }
 
-.cover{
+.container2 {
+    padding: 50px;
+}
+
+.cover {
     margin: 0px;
     background-image: url("images/bg-img.jpg");
     background-position: center top;
@@ -28,7 +31,7 @@ body {
     background-size: cover;
 }
 
-h1{
+h1 {
     color: white;
     padding-top: 15%;
     padding-left: 10%;
@@ -45,7 +48,8 @@ h1{
     width: 100%;
     text-align: center;
     margin: 0% 35% 0% 35%;
-    
+
+
 }
 
 label {
@@ -60,9 +64,9 @@ input {
     box-sizing: border-box;
 }
 
-form{
+form {
     padding-top: 60px;
-       
+
 }
 
 button {
@@ -80,14 +84,14 @@ button {
     font-weight: bold;
 }
 
-#gender{
+#gender {
     margin-top: 20px;
 }
 
-.subscribe{
+.subscribe {
     background-image: url('images/bmi-footer.jpg');
-     height: 800px; 
-     background-size: cover;
+    height: 800px;
+    background-size: cover;
 }
 
 /* Media Queries for Tablet */
@@ -95,26 +99,26 @@ button {
     #calculator {
         max-width: 80%;
         margin-left: 8%;
-    
+
     }
 
-    h1{
+    h1 {
         font-size: 3.5em;
         padding-top: 25%;
         padding-right: 45%;
         padding-left: 7%;
     }
 
-    .subscribe{
+    .subscribe {
         height: 200px;
-        
+
     }
 
-    form{
+    form {
         padding-top: 10px;
     }
 
-    .subscribe{
+    .subscribe {
         height: 400px;
     }
 }
@@ -124,40 +128,46 @@ button {
 @media only screen and (max-width: 600px) {
     #calculator {
         max-width: 80%;
-      
+
         margin: 5%;
         margin-left: 10%;
-        
-    
+
+
     }
 
-    #bmiForm{
+    #bmiForm {
         margin: 4%;
     }
 
 
-    h1{
+    h1 {
         font-size: 1.5em;
         padding-top: 35%;
         padding-right: 40%;
         padding-left: 4%;
     }
 
-    .cover{
+    .cover {
         height: 300px;
     }
+
     .subscribe {
-              height: 400px;
-              background-image: url('images/footer-mobile.jpg');
-          }
-    
+        height: 400px;
+        background-image: url('images/footer-mobile.jpg');
+    }
+
     form {
-              padding-top: 30px;
-          }
-    .form-control{
+        padding-top: 30px;
+    }
+
+    .form-control {
         width: 80%;
         margin-left: 8%;
     }
 
-    
+    .container2 {
+        padding: 2px 0px 2px 0px;
+    }
+
+
 }
