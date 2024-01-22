@@ -1,0 +1,101 @@
+<!-- Michelle Miranda 22112023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: white;">
+    <div class="cover" >
+        <h1>Welcome to the BMI Calculator!</h1>
+    </div>
+
+    <div class="conatiner1" style="background-image: url('images/calculator-img.jpg'); background-size: cover;background-position: center;">
+    
+    <div id="calculator">
+        <h2>BMI Calculator</h2>
+        <form id="bmiForm">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="gender">Gender:
+            <select id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            </label>
+
+            <button id = "button" type="button" onclick=" calculateBMI();">Calculate BMI</button>
+        </form>
+
+        <div id="result"></div>
+      
+
+    </div>
+    </div>
+    <footer class="bg-body-tertiary text-center" style="background-color: white;">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0" style="background-color: white;" >
+    <!-- Section: Form -->
+    <section class="subscribe">
+      <form >
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="form5Example26" class="form-control" />
+              <label class="form-label" for="form5Example26">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="submit" class="btn btn-primary mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright:
+    <a class="text-body" href="">BMICaluculator.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
